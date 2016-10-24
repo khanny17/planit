@@ -10,3 +10,6 @@ To run the server:
 4. Run `node server.js` to start the server.
 
 Once the server is running, you can connect to the application at localhost:8080
+
+
+Don't forget to view the application in the mobile view on chrome!
