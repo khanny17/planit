@@ -11,5 +11,11 @@ function( $stateProvider,   $urlRouterProvider,   $locationProvider) {
 			url: '/',
 			templateUrl: 'views/login.html',
 			controller: 'loginController'
+		})
+		
+		.state('register', {
+			url: '/register',
+			templateUrl: 'views/register.html',
+			controller: 'registerController'
 		});
 }])
