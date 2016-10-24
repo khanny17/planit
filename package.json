@@ -1,0 +1,11 @@
+{
+  "name": "Plan.it",
+  "main": "server.js",
+  "author": "Dreaming of SIS",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "dependencies": {
+    "express": "~4.5.1"
+  }
+}
