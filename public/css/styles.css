@@ -1,9 +1,5 @@
 // Just dump all the styles in this file
 
-input {
+.form-control {
     margin-bottom: 10px;
-}
-
-h1 {
-    color: blue;
 }
