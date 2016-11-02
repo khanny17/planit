@@ -1,5 +1,5 @@
-// Fuck it, just dump all the styles in this file
+// Just dump all the styles in this file
 
-input {
+.login-page .form-control {
     margin-bottom: 10px;
 }
