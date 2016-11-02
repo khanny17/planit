@@ -17,5 +17,10 @@ function( $stateProvider,   $urlRouterProvider,   $locationProvider) {
 			url: '/register',
 			templateUrl: 'views/register.html',
 			controller: 'registerController'
+		})
+		.state('home', {
+			url: '/home',
+			templateUrl: 'views/home.html',
+			controller: 'homeController'
 		});
 }])
