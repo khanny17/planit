@@ -1,4 +1,8 @@
 // Just dump all the styles in this file
+.dummy {
+    border-bottom: 3px solid black;
+}
+
 .header {
     border-bottom: 3px solid black;
 }
