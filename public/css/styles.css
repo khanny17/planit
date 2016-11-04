@@ -1,4 +1,9 @@
 /* Just dump all the styles in this file */
 .header {
+    margin-bottom: 10px;
     border-bottom: 3px solid black;
+}
+
+input {
+    margin-bottom: 10px;
 }
