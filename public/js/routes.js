@@ -12,7 +12,7 @@ function( $stateProvider,   $urlRouterProvider,   $locationProvider) {
 			templateUrl: 'views/login.html',
 			controller: 'loginController'
 		})
-		
+
 		.state('register', {
 			url: '/register',
 			templateUrl: 'views/register.html',
@@ -28,5 +28,10 @@ function( $stateProvider,   $urlRouterProvider,   $locationProvider) {
 			url: '/home',
 			templateUrl: 'views/home.html',
 			controller: 'homeController'
+		})
+
+		.state('inside.newclass', {
+			url: '/newclass',
+			templateUrl: 'views/newclass.html'
 		});
 }])
