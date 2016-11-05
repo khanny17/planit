@@ -1,3 +1,4 @@
 angular.module('PlanitApp', [
-	'ui.router'
+	'ui.router',
+    'ui.bootstrap'
 ]);
