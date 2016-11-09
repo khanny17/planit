@@ -10,31 +10,31 @@ angular.module('PlanitApp')
 			name: 'Monday',
 			active: false,
 			time: defaultTime,
-			duration: 1 //How long the class is, in hours
+			duration: 60 //How long the class is, in minutes
 		},
 		{
 			name: 'Tuesday',
 			active: false,
 			time: defaultTime,
-			duration: 1 //How long the class is, in hours
+			duration: 60
 		},
 		{
 			name: 'Wednesday',
 			active: false,
 			time: defaultTime,
-			duration: 1 //How long the class is, in hours
+			duration: 60
 		},
 		{
 			name: 'Thursday',
 			active: false,
 			time: defaultTime,
-			duration: 1 //How long the class is, in hours
+			duration: 60
 		},
 		{
 			name: 'Friday',
 			active: false,
 			time: defaultTime,
-			duration: 1 //How long the class is, in hours
+			duration: 60
 		}
 	];  
   
