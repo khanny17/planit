@@ -1,10 +1,14 @@
 angular.module('PlanitApp')
 
-.controller('newClassController', ['$scope', function($scope){
+.controller('newClassController', ['$scope', 'classService', function($scope, classService){
   	var defaultTime = new Date();
   	defaultTime.setHours( 14 );
   	defaultTime.setMinutes( 0 );
 
+	$scope.submit = function() {
+		classService.addClass($scope.className, $scope.days);
+	};
+	
 	$scope.invalidForm = function() {
 		if(!$scope.className) {
 			return true;	
