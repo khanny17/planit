@@ -4,7 +4,7 @@
   		<h1>New Class</h1>
 
   		<input type="name" class="form-control" placeholder="Class Name" />
-      <!-- DON'T FORGET THE FRICKEN TIME PICKER HERE -->
+      
       <form>
         <p>Select the days of the week the class occurs on.</p>
         
@@ -15,9 +15,16 @@
               {{day.name}}
             </label>
           </div>
-          <div ng-if="day.active" uib-timepicker ng-model="day.time"></div>
+          <div ng-if="day.active">
+            <div uib-timepicker ng-model="day.time"></div>
+            <div class="input-group">
+              <input type="number" class="form-control" placeholder="Duration" aria-describedby="basic-addon2">
+              <span class="input-group-addon" id="basic-addon2">min</span>
+            </div>
+          </div>
         </div>
       </form>
+      
   		<button class="btn btn-default" ui-sref="inside.home">Create Class</button>
   	</div>
   </div>
