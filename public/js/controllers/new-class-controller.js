@@ -1,20 +1,20 @@
 angular.module('PlanitApp')
 
 .controller('newClassController', ['$scope', function($scope){
-  var default = new Date();
-  d.setHours( 14 );
-  d.setMinutes( 0 );
+  	var defaultTime = new Date();
+  	d.setHours( 14 );
+  	d.setMinutes( 0 );
 
 	$scope.monday = false;
-  $scope.mondayTime = default;
-  $scope.tuesday = false;
-  $scope.tuesdayTime = default;
-  $scope.wednesday = false;
-  $scope.wednesdayTime = default;
-  $scope.thursday = false;
-  $scope.thursdayTime = default;
-  $scope.friday = false;
-  $scope.fridayTime = default;
+  	$scope.mondayTime = defaultTime;
+  	$scope.tuesday = false;
+  	$scope.tuesdayTime = defaultTime;
+  	$scope.wednesday = false;
+  	$scope.wednesdayTime = defaultTime;
+  	$scope.thursday = false;
+  	$scope.thursdayTime = defaultTime;
+  	$scope.friday = false;
+  	$scope.fridayTime = defaultTime;
   
   
 }]);
