@@ -6,22 +6,22 @@
   		<input type="name" class="form-control" placeholder="Class Name" />
       <!-- DON'T FORGET THE FRICKEN TIME PICKER HERE -->
       <form>
-        <p>Select the days of the week the class occurs on.<p></br>
+        <p>Select the days of the week the class occurs on.</p>
         
-      <input type="checkbox" ng-model="monday" value="monday"><label for="monday">Monday</label></br>
-        <div ng-if="monday" uib-timepicker ng-model="monday-time" ng-change="changed()"></div>
+        <input type="checkbox" ng-model="monday" value="monday" /><label for="monday">Monday</label>
+        <div ng-if="monday" uib-timepicker ng-model="mondayTime"></div>
         
-        <input type="checkbox" ng-model="tuesday" value="tuesday"><label for="tuesday">Tuesday</label></br>
-        <div ng-if="tuesday" uib-timepicker ng-model="tuesday-time" ng-change="changed()" hour-step="1" minute-step="1" show-meridian="ismeridian"></div>
+        <input type="checkbox" ng-model="tuesday" value="tuesday" /><label for="tuesday">Tuesday</label>
+        <div ng-if="tuesday" uib-timepicker ng-model="tuesdayTime" hour-step="1" minute-step="1" show-meridian="ismeridian"></div>
         
-        <input type="checkbox" ng-model="wednesday" value="wednesday"><label for="wednesday">Wednesday</label></br>
-        <div ng-if="wednesday" uib-timepicker ng-model="wednesday-time" ng-change="changed()" hour-step="1" minute-step="1" show-meridian="ismeridian"></div>
+        <input type="checkbox" ng-model="wednesday" value="wednesday" /><label for="wednesday">Wednesday</label>
+        <div ng-if="wednesday" uib-timepicker ng-model="wednesdayTime" hour-step="1" minute-step="1" show-meridian="ismeridian"></div>
         
-        <input type="checkbox" ng-model="thursday" value="thursday"><label for="thursday">Thursday</label></br>
-        <div ng-if="thursday" uib-timepicker ng-model="thursday-time" ng-change="changed()" hour-step="1" minute-step="1" show-meridian="ismeridian"></div>
+        <input type="checkbox" ng-model="thursday" value="thursday" /><label for="thursday">Thursday</label>
+        <div ng-if="thursday" uib-timepicker ng-model="thursdayTime" hour-step="1" minute-step="1" show-meridian="ismeridian"></div>
         
-        <input type="checkbox" ng-model="friday" value="friday"><label for="friday">Friday</label></br>
-        <div ng-if="friday" uib-timepicker ng-model="friday-time" ng-change="changed()" hour-step="1" minute-step="1" show-meridian="ismeridian"></div>
+        <input type="checkbox" ng-model="friday" value="friday" /><label for="friday">Friday</label>
+        <div ng-if="friday" uib-timepicker ng-model="fridayTime" hour-step="1" minute-step="1" show-meridian="ismeridian"></div>
       </form>
   		<button class="btn btn-default" ui-sref="inside.home">Create Class</button>
   	</div>
