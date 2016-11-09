@@ -5,16 +5,32 @@ angular.module('PlanitApp')
   	defaultTime.setHours( 14 );
   	defaultTime.setMinutes( 0 );
 
-	$scope.monday = false;
-  	$scope.mondayTime = defaultTime;
-  	$scope.tuesday = false;
-  	$scope.tuesdayTime = defaultTime;
-  	$scope.wednesday = false;
-  	$scope.wednesdayTime = defaultTime;
-  	$scope.thursday = false;
-  	$scope.thursdayTime = defaultTime;
-  	$scope.friday = false;
-  	$scope.fridayTime = defaultTime;
-  
+	$scope.days = [
+		{
+			name: 'Monday',
+			active: false,
+			time: defaultTime
+		},
+		{
+			name: 'Tuesday',
+			active: false,
+			time: defaultTime
+		},
+		{
+			name: 'Wednesday',
+			active: false,
+			time: defaultTime
+		},
+		{
+			name: 'Thursday',
+			active: false,
+			time: defaultTime
+		},
+		{
+			name: 'Friday',
+			active: false,
+			time: defaultTime
+		}
+	];  
   
 }]);
