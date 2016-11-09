@@ -5,6 +5,22 @@ angular.module('PlanitApp')
   	defaultTime.setHours( 14 );
   	defaultTime.setMinutes( 0 );
 
+	$scope.invalidForm = function() {
+		if(!$scope.className) {
+			return true;	
+		}
+		
+		//Array.prototype.every() stops looping and returns false when the callback returns false
+		// if no callbacks return false, it returns true
+		return $scope.days.every(function(day){
+			//If even one day is active, then the form is valid
+			if(day.active) {
+				return false;
+			}
+			return true;
+		});
+	};
+	
 	$scope.days = [
 		{
 			name: 'Monday',
