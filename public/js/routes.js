@@ -32,6 +32,7 @@ function( $stateProvider,   $urlRouterProvider,   $locationProvider) {
 
 		.state('inside.newclass', {
 			url: '/newclass',
-			templateUrl: 'views/newclass.html'
+			templateUrl: 'views/newclass.html',
+			controller: 'newClassController
 		});
 }])
