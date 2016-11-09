@@ -1,7 +1,14 @@
 <div class="row">
 
+    <div class="menu" ng-if="showMenu">
+        <ul class="list-group">
+            <li class="list-group-item"><a ui-sref="inside.home">Home</a></li>  
+            <li class="list-group-item"><a ui-sref="inside.newclass">New Class</a></li>  
+        </ul>
+    </div>
+    
     <div class="col-xs-12 header">
-        <i class="fa fa-bars fa-2x" aria-hidden="true"></i>
+        <i class="fa fa-bars fa-2x" aria-hidden="true" ng-click="showMenu = !showMenu"></i>
         <div>
             <h3><i class="fa fa-graduation-cap" aria-hidden="true"></i> Welcome, User</h3>
             <a class="pull-right" href="#">Account Settings</a>
