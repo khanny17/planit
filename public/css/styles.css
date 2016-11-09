@@ -17,3 +17,8 @@
 input {
     margin-bottom: 10px;
 }
+
+menu {
+    position: absolute;
+    top: 80px;
+}
