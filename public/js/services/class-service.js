@@ -5,7 +5,7 @@ angular.module('PlanitApp')
   self.classes = [];
   
   self.addClass = function(name, days) {
-      classes.push({
+      self.classes.push({
           name: name,
           days: days
       });
