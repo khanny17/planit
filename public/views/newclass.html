@@ -1,31 +1,32 @@
 <div>
-  <div class="row">
-  	<div class="col-sm-6">
-      <h1>New Class</h1>
-      <input type="name" class="form-control" placeholder="Class Name" ng-model="className" />
-      
-      <form>
-        <p>Select the days of the week the class occurs on.</p>
-        
-        <div class="day" ng-repeat="day in days">
-          <div class="checkbox">
-            <label>
-              <input type="checkbox" ng-model="day.active" value="">
-              {{::day.name}}
-            </label>
-          </div>
-          <div ng-if="day.active">
-            <div uib-timepicker ng-model="day.time"></div>
-            <div class="input-group">
-              <input type="number" class="form-control" ng-model="day.duration"
-                     placeholder="Duration" aria-describedby="basic-addon2">
-              <span class="input-group-addon" id="basic-addon2">min</span>
-            </div>
-          </div>
+    <div class="row">
+        <div class="col-sm-6">
+            <h1>New Class</h1>
+            <input type="name" class="form-control" placeholder="Class Name" ng-model="className" />
+
+            <form>
+                <p>Select the days of the week the class occurs on.</p>
+
+                <div class="day" ng-repeat="day in days">
+                    <div class="checkbox">
+                        <label>
+                            <input type="checkbox" ng-model="day.active" value="">
+                            {{::day.name}}
+                        </label>
+                    </div>
+                    <div ng-if="day.active">
+                        <div uib-timepicker ng-model="day.time"></div>
+                        <div class="input-group">
+                            <input type="number" class="form-control" ng-model="day.duration"
+                            placeholder="Duration" aria-describedby="basic-addon2">
+                            <span class="input-group-addon" id="basic-addon2">min</span>
+                        </div>
+                    </div>
+                </div>
+            </form>
+
+            <button class="btn btn-default pull-right" ui-sref="inside.home" ng-disabled="invalidForm()" ng-click="submit()">Create Class</button>
+            <button class="btn btn-default" ui-sref="inside.home">Cancel</button>
         </div>
-      </form>
-      
-  		<button class="btn btn-default" ui-sref="inside.home" ng-disabled="invalidForm()" ng-click="submit()">Create Class</button>
-  	</div>
-  </div>
+    </div>
 </div>

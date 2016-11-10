@@ -9,6 +9,10 @@ angular.module('PlanitApp')
             label: 'Home'
         },
         {
+            name: 'inside.newAssignment',
+            label: 'New Assignment'
+        },
+        {
             name: 'inside.newclass',
             label: 'New Class'
         }

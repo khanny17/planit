@@ -35,5 +35,11 @@ function( $stateProvider,   $urlRouterProvider,   $locationProvider) {
 			url: '/newclass',
 			templateUrl: 'views/newclass.html',
 			controller: 'newClassController'
+		})
+
+		.state('inside.newAssignment', {
+			url: '/new-assignment',
+			templateUrl: 'views/new-assignment.html',
+			controller: 'newAssignmentController'
 		});
 }])
