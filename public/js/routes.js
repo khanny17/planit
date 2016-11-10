@@ -21,7 +21,8 @@ function( $stateProvider,   $urlRouterProvider,   $locationProvider) {
 
         .state('inside', {
             abstract: true,
-            templateUrl: 'views/inside.html'
+            templateUrl: 'views/inside.html',
+            controller: 'insideController'
         })
 
 		.state('inside.home', {

@@ -1,5 +1,5 @@
 angular.module('PlanitApp')
 
-.controller('homeController', ['$scope', function($scope){
-	$scope.test = "Testing!";
+.controller('homeController', ['$scope', 'assignmentService', function($scope, assignmentService){
+    $scope.assignments = assignmentService.get();
 }]);

@@ -1,4 +1,4 @@
-<div class="container">
+<div>
     <div class="row" style="text-align:center; margin-bottom:10px;">
         <div class="col-xs-6">
             <button class="btn btn-default"> <i class="fa fa-pencil-square-o fa-fw" aria-hidden="true"></i> New Assignment </button>
@@ -15,4 +15,11 @@
             <div uib-datepicker ng-model="dt" class="well well-sm" datepicker-options="options"></div>
         </div>
     </div>
+
+    <div class="row">
+        <div class="col-xs-12">
+            <p ng-repeat="ass in assignments">{{ass}}</p>
+        </div>
+    </div>
+
 </div>

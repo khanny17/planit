@@ -3,7 +3,7 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    
+
     padding-top: 10px;
     padding-bottom: 10px;
     margin-bottom: 10px;
@@ -18,7 +18,16 @@ input {
     margin-bottom: 10px;
 }
 
-menu {
+.menu {
     position: absolute;
     top: 80px;
+    right: 10px;
+    left: 10px;
+    background: white;
+    z-index: 1;
+    border: 1px solid black;
+}
+
+.menu ul {
+    margin: 0;
 }
