@@ -4,13 +4,14 @@
         <h3>Menu</h3>
         <ul class="list-group">
             <li class="list-group-item" ng-repeat="state in links" 
-                ui-sref="{{state.name}}" ng-class="{ 'active': isCurrentState(state.name) }">{{state.label}}</li>  
+                ng-click="go(state.name)" ng-class="{ 'active': isCurrentState(state.name) }">{{state.label}}</li>  
         </ul>
     </div>
 
     <div class="col-xs-12 header">
         <div>
-            <i class="fa fa-bars fa-2x" aria-hidden="true" ng-click="showMenu = !showMenu"></i>
+            <i class="fa fa-2x" aria-hidden="true" ng-class="{ 'fa-bars': !showMenu, 'fa-times': showMenu }"
+               ng-click="showMenu = !showMenu"></i>
         </div>
         <div>
             <h3><i class="fa fa-graduation-cap" aria-hidden="true"></i> Welcome, User</h3>

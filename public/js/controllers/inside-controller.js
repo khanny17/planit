@@ -17,4 +17,9 @@ angular.module('PlanitApp')
     $scope.isCurrentState = function(stateName) {
         return $state.current.name === stateName;
     };
+
+    $scope.go = function(stateName) {
+        $scope.showMenu = false;
+        $state.go(stateName);
+    };
 }]);
