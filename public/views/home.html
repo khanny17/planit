@@ -20,7 +20,7 @@
         <div class="col-xs-12">
             <ul class="list-group">
                 <li class="list-group-item" ng-repeat="assignment in assignments" 
-                    ng-click="go(assignment)">{{::assignment.name}} - {{::assignment.dueDate}}</li>  
+                ng-click="go(assignment)">{{::assignment.name}} - {{::assignment.dueDate | date:'MM-dd-yyyy'}}<p class="pull-right">{{assignment.class}}</p></li>  
             </ul>
         </div>
     </div>
