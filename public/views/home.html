@@ -16,11 +16,43 @@
         </div>
     </div>
 
+    <h3>Incomplete Assignments</h3>
     <div class="row">
         <div class="col-xs-12">
             <ul class="list-group">
-                <li class="list-group-item" ng-repeat="assignment in assignments" 
-                    ng-click="go(assignment)">{{assignment.name}}</li>  
+                <li ng-repeat="assignment in assignments track by $index">
+                    <div class="list-group-item">{{assignment.name}}
+                        <div style="float:right;">
+                            <button class="btn btn-success" ng-click="complete(assignment)">Completed</button>
+                            <div class="divider"></div>
+                            <button class="btn btn-primary">Edit</button>
+                            <div class="divider"></div>
+                            <button class="btn btn-danger">Delete</button>
+                        </div>
+                        <div style="clear: both;"></div>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </div>
+
+    <div></div>
+    <h3>Complete Assignments</h3>
+    <div class="row">
+        <div class="col-xs-12">
+            <ul class="list-group">
+                <li ng-repeat="assignment in completedAssignments track by $index">
+                    <div class="list-group-item" style="background-color: lightgreen">{{assignment.name}}
+                        <div style="float:right;">
+                            <button id="assignment.id" class="btn" ng-click="incomplete(assignment)">Incomplete</button>
+                            <div class="divider"></div>
+                            <button class="btn btn-primary">Edit</button>
+                            <div class="divider"></div>
+                            <button class="btn btn-danger">Delete</button>
+                        </div>
+                        <div style="clear: both;"></div>
+                    </div>
+                </li>
             </ul>
         </div>
     </div>
