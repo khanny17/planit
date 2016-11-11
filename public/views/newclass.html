@@ -3,9 +3,7 @@
         <div class="col-sm-6">
             <h1>New Class</h1>
             <input type="name" class="form-control" placeholder="Class Name" ng-model="className" />
-
-            <form>
-                <p>Select the days of the week the class occurs on.</p>
+            <p>Select the days of the week the class occurs on.</p>
 
                 <div class="day" ng-repeat="day in days">
                     <div class="checkbox">
@@ -23,9 +21,8 @@
                         </div>
                     </div>
                 </div>
-            </form>
 
-            <button class="btn btn-default pull-right" ui-sref="inside.home" ng-disabled="invalidForm()" ng-click="submit()">Create Class</button>
+            <button class="btn btn-default pull-right" ui-sref="inside.home" ng-disabled="invalidForm()" ng-click="submit()">Submit</button>
             <button class="btn btn-default" ui-sref="inside.home">Cancel</button>
         </div>
     </div>
