@@ -18,7 +18,10 @@
 
     <div class="row">
         <div class="col-xs-12">
-            <p ng-repeat="ass in assignments">{{ass}}</p>
+            <ul class="list-group">
+                <li class="list-group-item" ng-repeat="assignment in assignments" 
+                    ng-click="go(assignment)">{{assignment.name}}</li>  
+            </ul>
         </div>
     </div>
 

@@ -5,7 +5,7 @@ angular.module('PlanitApp')
         self.assignments = [];
 
         self.add = function(name, dueDate) {
-            self.classes.push({
+            self.assignments.push({
                 name: name,
                 dueDate: dueDate
             });
