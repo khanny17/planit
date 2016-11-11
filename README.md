@@ -1,6 +1,7 @@
 # Planit
 
 An application to assist high school students with planning their assignments.
+
 Live Version: [http://planit-444.herokuapp.com/](http://planit-444.herokuapp.com/)
 
 To run the server:
