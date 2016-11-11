@@ -8,6 +8,11 @@
 
             <textarea ng-model="assignment.description" class="form-control" style="resize:none;" placeholder="Description"></textarea>
 
+			<p>Choose due date<p>
+			<div class="col-xs-12">
+				<div uib-datepicker ng-model="assignment.dueDate" class="well well-sm" datepicker-options="options"></div>
+			</div>
+			
             <button class="btn btn-default pull-right" ui-sref="inside.home" ng-disabled="invalidForm()" ng-click="submit()">Create Assignment</button>
             <button class="btn btn-default" ui-sref="inside.home">Cancel</button>
         </div>
