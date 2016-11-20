@@ -13,6 +13,17 @@ angular.module('PlanitApp')
             return self.assignments;
         };
 
+        self.delete = function(assignment) {
+            var comIndex = self.completed.indexOf(assignment);
+            if (comIndex > -1) {
+                self.completed.splice(comIndex, 1);
+            }
+            var assignIndex = self.assignments.indexOf(assignment);
+            if (assignIndex > -1) {
+                self.assignments.splice(assignIndex, 1);
+            }
+        };
+
         self.complete = function(assignment) {
             var index = self.assignments.indexOf(assignment);
             if (index > -1) {

@@ -21,13 +21,13 @@
         <div class="col-xs-12">
             <ul class="list-group">
                 <li ng-repeat="assignment in assignments track by $index">
-                    <div class="list-group-item">{{assignment.name}}
-                        <div style="float:right;">
+                    <div class="list-group-item">{{::assignment.name}} - {{::assignment.dueDate | date:'MM-dd-yyyy'}}    {{assignment.class}}
+                <div style="float:right;">
                             <button class="btn btn-success" ng-click="complete(assignment)">Completed</button>
                             <div class="divider"></div>
                             <button class="btn btn-primary">Edit</button>
                             <div class="divider"></div>
-                            <button class="btn btn-danger">Delete</button>
+                            <button class="btn btn-danger" ng-click="remove(assignment)">Delete</button>
                         </div>
                         <div style="clear: both;"></div>
                     </div>
@@ -42,13 +42,13 @@
         <div class="col-xs-12">
             <ul class="list-group">
                 <li ng-repeat="assignment in completedAssignments track by $index">
-                    <div class="list-group-item" style="background-color: lightgreen">{{assignment.name}}
+                    <div class="list-group-item" style="background-color: lightgreen">{{::assignment.name}} - {{::assignment.dueDate | date:'MM-dd-yyyy'}}    {{assignment.class}}
                         <div style="float:right;">
                             <button id="assignment.id" class="btn" ng-click="incomplete(assignment)">Incomplete</button>
                             <div class="divider"></div>
                             <button class="btn btn-primary">Edit</button>
                             <div class="divider"></div>
-                            <button class="btn btn-danger">Delete</button>
+                            <button class="btn btn-danger" ng-click="remove(assignment)">Delete</button>
                         </div>
                         <div style="clear: both;"></div>
                     </div>

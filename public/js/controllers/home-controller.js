@@ -9,16 +9,16 @@ angular.module('PlanitApp')
     };
 
     $scope.complete = function(assignment) {
-        //$scope.$apply(function(assignment) {
-            assignmentService.complete(assignment);
-            $scope.completedAssignments = assignmentService.getCompleted();
-        //});
+        assignmentService.complete(assignment);
+        $scope.completedAssignments = assignmentService.getCompleted();
     };
 
     $scope.incomplete = function(assignment) {
-        //$scope.$apply(function(assignment) {
-            assignmentService.incomplete(assignment);
-            $scope.assignments = assignmentService.get();
-        //});
+        assignmentService.incomplete(assignment);
+        $scope.assignments = assignmentService.get();
+    };
+
+    $scope.remove = function(assignment) {
+        assignmentService.delete(assignment);
     };
 }]);
