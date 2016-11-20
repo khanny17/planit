@@ -20,7 +20,7 @@
     <div class="row">
         <div class="col-xs-12">
             <ul class="list-group">
-                <li ng-repeat="assignment in assignments track by $index">
+                <li ng-repeat="assignment in assignments">
                     <div class="list-group-item">{{::assignment.name}} - {{::assignment.dueDate | date:'MM-dd-yyyy'}}    {{assignment.class}}
                 <div style="float:right;">
                             <button class="btn btn-success" ng-click="complete(assignment)">Completed</button>
@@ -41,7 +41,7 @@
     <div class="row">
         <div class="col-xs-12">
             <ul class="list-group">
-                <li ng-repeat="assignment in completedAssignments track by $index">
+                <li ng-repeat="assignment in completedAssignments">
                     <div class="list-group-item" style="background-color: lightgreen">{{::assignment.name}} - {{::assignment.dueDate | date:'MM-dd-yyyy'}}    {{assignment.class}}
                         <div style="float:right;">
                             <button id="assignment.id" class="btn" ng-click="incomplete(assignment)">Incomplete</button>
