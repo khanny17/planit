@@ -10,7 +10,7 @@ angular.module('PlanitApp')
         };
 
         self.get = function() {
-            return self.assignments;
+            return self.assignments.sort(function(a, b) {return a.dueDate - b.dueDate});
         };
 
         self.delete = function(assignment) {
@@ -41,6 +41,6 @@ angular.module('PlanitApp')
         };
 
         self.getCompleted = function() {
-            return self.completed;
+            return self.completed.sort(function(a, b) {return a.dueDate - b.dueDate});
         };
     }]);
