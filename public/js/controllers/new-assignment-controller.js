@@ -11,7 +11,15 @@ angular.module('PlanitApp')
 
             $scope.addClass = function(){
                 var modal = $uibModal.open({
-                    templateUrl: 'views/modals/new-class.html'
+                    templateUrl: 'views/modals/new-class.html',
+                    controller: ['$scope', function($modalScope) {
+                        $modalScope.add = function() {
+                            classService.add($modalScope.name);
+                            modal.close();
+                        };
+                        
+                        $modalScope.cancel = modal.close;
+                    }
                 });
 
                 modal.closed.then(function(){
