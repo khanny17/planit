@@ -13,8 +13,8 @@ angular.module('PlanitApp')
             label: 'New Assignment'
         },
         {
-            name: 'inside.newclass',
-            label: 'New Class'
+            name: 'inside.accountSettings',
+            label: 'Account Settings'
         }
     ];
 
