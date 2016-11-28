@@ -8,8 +8,8 @@ To run the server:
 
 1. Ensure you have the latest version of nodejs installed.
 2. Clone the repository
-3. Run `npm install`
-4. Run `node server.js` to start the server.
+3. Run `npm install` on the command line in the root directory of the repository
+4. Run `node server.js` on the command line in the root directory of the repository
 
 Once the server is running, you can connect to the application at localhost:8080
 
