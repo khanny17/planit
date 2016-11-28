@@ -6,16 +6,16 @@ angular.module('PlanitApp')
             $scope.assignment = {
                 dueDate: new Date()
             };
+            
             $scope.classes = classService.getClasses() || [];
 
-            if($scope.classes.length < 1) {
-                //TODO redirect to the new class page
+            $scope.addClass = function(){
                 var modal = $uibModal.open({
-                    templateUrl: 'views/modals/no-classes-yet.html'
+                    templateUrl: 'views/modals/new-class.html'
                 });
 
                 modal.closed.then(function(){
-                    $state.go('inside.newclass');
+                    $scope.classes = classService.getClasses() || [];
                 });
             };
 
