@@ -14,7 +14,7 @@ angular.module('PlanitApp')
                     templateUrl: 'views/modals/new-class.html',
                     controller: ['$scope', function($modalScope) {
                         $modalScope.add = function() {
-                            classService.add($modalScope.name);
+                            classService.addClass($modalScope.name);
                             modal.close();
                         };
                         
