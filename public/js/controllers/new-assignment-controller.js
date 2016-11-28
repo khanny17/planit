@@ -19,7 +19,7 @@ angular.module('PlanitApp')
                         };
                         
                         $modalScope.cancel = modal.close;
-                    }
+                    }]
                 });
 
                 modal.closed.then(function(){
