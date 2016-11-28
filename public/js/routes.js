@@ -41,5 +41,11 @@ function( $stateProvider,   $urlRouterProvider,   $locationProvider) {
 			url: '/new-assignment',
 			templateUrl: 'views/new-assignment.html',
 			controller: 'newAssignmentController'
+		})
+	
+		.state('inside.accountSettings', {
+			url: '/settings',
+			templateUrl: 'views/account-settings.html',
+			controller: 'accountSettingsController'
 		});
 }])
