@@ -1,9 +1,14 @@
 <div class="row">
 	<div class="col-sm-6">
 		<h1>plan.it</h1>
-		
-		<input type="email" class="form-control" placeholder="Email" />
-		<input type="password" class="form-control" placeholder="Password" />
+		<div class="form-group">
+			<label for="email">Email</label>
+			<input id="email" type="email" class="form-control" placeholder="Email" />
+		</div>
+		<div class="form-group">
+			<label for="password">Password</label>
+			<input id="password" type="password" class="form-control" placeholder="Password" />
+		</div>
 		<a ui-sref="register">Create Account</a>
 		<button class="btn btn-primary pull-right" ui-sref="inside.home">Login</button>
 	</div>
