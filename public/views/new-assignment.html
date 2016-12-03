@@ -4,12 +4,12 @@
             <h1>New Assignment</h1>
 		
 	    <div class="form-group">
-		    <label for="name"><b>Assignment Name:</b></label>
+		    <label for="name">Assignment Name</label>
                 <input id="name" type="text" class="form-control" placeholder="Assignment Name" ng-model="assignment.name" />
 	    </div>
 
 	    <form class="form-inline" role="form">
-		    <label><b>Class:</b></label>
+		    <label>Class</label>
                 <select class="form-control" ng-model="assignment.class">
                     <option name="name" value="value" ng-repeat="name in classes"></option>
 	        </select>
