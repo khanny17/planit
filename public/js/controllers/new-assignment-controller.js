@@ -39,8 +39,5 @@ angular.module('PlanitApp')
                 if(!$scope.assignment.class) {
                     return true;	
                 }
-                if(!$scope.assignment.description) {
-                    return true;	
-                }
             };
         }]);
