@@ -9,8 +9,9 @@
 	    </div>
 
 	    <form class="form-inline" role="form">
-		    <label>Class</label>
-                <select class="form-control" ng-model="assignment.class" placeholder="Class">
+		    <label style="display: block;">Class</label>
+                <select style="display: inline-block; width:80%"
+			class="form-control" ng-model="assignment.class" placeholder="Class">
                     <option name="name" value="value" ng-repeat="name in classes">{{name}}</option>
 	        </select>
 	        <button class="btn btn-default" ng-click="addClass()"><i class="fa fa-plus"></i></button>
