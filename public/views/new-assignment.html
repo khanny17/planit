@@ -4,11 +4,12 @@
             <h1>New Assignment</h1>
 		
 	    <div class="form-group">
-  		<label for="name">Assignment Name:</label>
+		    <label for="name"><b>Assignment Name:</b></label>
                 <input id="name" type="text" class="form-control" placeholder="Assignment Name" ng-model="assignment.name" />
 	    </div>
 
 	    <form class="form-inline" role="form">
+		    <label><b>Class:</b></label>
                 <select class="form-control" ng-model="assignment.class">
                     <option name="name" value="value" ng-repeat="name in classes"></option>
 	        </select>
@@ -16,13 +17,13 @@
 	    </form>
 
 	    
-            <p>Choose due date<p>
+            <b>Choose due date</b>
             <div class="col-xs-12">
 	        <div uib-datepicker ng-model="assignment.dueDate" class="well well-sm" datepicker-options="options"></div>
             </div>
 			
 	    <div class="form-group">
-                <label for="notes"></label>
+                <label for="notes">Notes:</label>
                 <textarea id="notes" ng-model="assignment.description" class="form-control" style="resize:none;" placeholder="Notes"></textarea>
 	    </div>
 		
