@@ -21,7 +21,7 @@
                 <div style="float:right;">
                             <button class="btn btn-success" ng-click="complete(assignment)">Completed</button>
                             <div class="divider"></div>
-                            <button class="btn btn-primary">Edit</button>
+                            <button class="btn btn-primary" ng-click="editAssignment(assignment)">Edit</button>
                             <div class="divider"></div>
                             <button class="btn btn-danger" ng-click="remove(assignment)">Delete</button>
                         </div>
@@ -42,7 +42,7 @@
                         <div style="float:right;">
                             <button id="assignment.id" class="btn" ng-click="incomplete(assignment)">Incomplete</button>
                             <div class="divider"></div>
-                            <button class="btn btn-primary">Edit</button>
+                            <button class="btn btn-primary" ng-click="editAssignment(assignment)">Edit</button>
                             <div class="divider"></div>
                             <button class="btn btn-danger" ng-click="remove(assignment)">Delete</button>
                         </div>
@@ -52,5 +52,4 @@
             </ul>
         </div>
     </div>
-
 </div>
